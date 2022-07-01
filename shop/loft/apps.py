@@ -1,0 +1,7 @@
+from django.apps import AppConfig
+
+
+class LoftConfig(AppConfig):
+    default_auto_field = 'django.db.models.BigAutoField'
+    name = 'loft'
+    versose_name = 'Супер пупер магазин'
