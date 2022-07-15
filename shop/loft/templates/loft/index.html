@@ -13,45 +13,40 @@
 </head>
 
 <body>
-    {% include 'loft/components/_navbar.html' %}
-    <!-- /.nav -->
 
-    <div class="wrapper">
+{% include 'loft/components/_navbar.html' %}
+<!-- /.nav -->
 
-        <header class="header">
-            <div class="container">
-                <div class="header__content">
+<div class="wrapper">
 
-                    {% include 'loft/components/_header_bar.html'%}
-                    {% include 'loft/components/_header_categories_list.html'%}
+    <header class="header">
+        <div class="container">
+            {% include 'loft/components/_header.html' %}
+            {% include 'loft/components/_slider.html' %}
+            <!-- /.header__content -->
+        </div>
+        <!-- /.container -->
+    </header>
+    <!-- /.header -->
 
-                    <!-- /.nav__catigories -->
+    <main class="main">
+        <div class="container">
+            <h2 class="products__title">Каталог</h2>
+            {% include 'loft/components/_products.html' %}
+            <!-- /.products -->
+        </div>
+        <!-- /.container -->
+    </main>
+    <!-- /.main -->
 
-                    {% include 'loft/components/_slider.html' %}
-                </div>
-                <!-- /.header__content -->
-            </div>
-            <!-- /.container -->
-        </header>
-        <!-- /.header -->
+    {% include 'loft/components/_footer.html' %}
+    <!-- /.footer -->
+</div>
+<!-- /.wrapper -->
 
-        <main class="main">
-            <div class="container">
-                {% include 'loft/components/_products.html' %}
-                <!-- /.products -->
-            </div>
-            <!-- /.container -->
-        </main>
-        <!-- /.main -->
-
-        {% include 'loft/components/_footer.html'%}
-        <!-- /.footer -->
-    </div>
-    <!-- /.wrapper -->
-
-    <script src="{% static 'loft/scripts/script.js' %}"></script>
-    <script src="{% static 'loft/scripts/slider.js' %}"></script>
-    <!-- Js - скрипты -->
+<script src="{% static 'loft/scripts/script.js' %}"></script>
+<script src="{% static 'loft/scripts/slider.js' %}"></script>
+<!-- Js - скрипты -->
 </body>
 
 </html>
