@@ -825,6 +825,7 @@
     height: 30px;
     background: #FFC107;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+    margin-right: 5px;
 }
 
 .paremeters__count {
@@ -866,7 +867,6 @@
     transition: .3s cubic-bezier(0.68, -0.6, 0.32, 1.6), opacity .3s linear;
 }
 
-.paremetes__list-item:hover .list__drop,
 .list__drop.active {
     top: calc(100% + 5px);
     visibility: visible;

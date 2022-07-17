@@ -10,146 +10,165 @@
     <!-- Css - Стили -->
     <link rel="stylesheet" href="{% static 'loft/style/style.css' %}">
     <link rel="stylesheet" href="{% static 'loft/assets/fontawesome/css/all.min.css' %}">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 
 <body>
 
 
-    {% include 'loft/components/_navbar.html' %}
-    <!-- /.nav -->
+{% include 'loft/components/_navbar.html' %}
+<!-- /.nav -->
 
-    <div class="wrapper">
-        <header class="header">
-            <div class="container">
-                <div class="header__content">
-                    {% include 'loft/components/_header.html' %}
-                    <!-- /.nav__catigories -->
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                {% include 'loft/components/_header.html' %}
+                <!-- /.nav__catigories -->
 
-                    <div class="product__slider">
-                        <div class="product__slider-content">
+                <div class="product__slider">
+                    <div class="product__slider-content">
 
-                            <div class="sliderLines">
-                                <div class="product__slider-item active">
-                                    <img src="{% static 'loft/assets/images/product/product-main.png' %}" alt="banner"
-                                        class="product__slider-img">
-                                </div>
-
-                                <div class="product__slider-item">
-                                    <img src="{% static 'loft/assets/images/product/product-main.png' %}" alt="banner"
-                                        class="product__slider-img">
-                                </div>
-
-                                <div class="product__slider-item">
-                                    <img src="{% static 'loft/assets/images/product/product-main.png' %}" alt="banner"
-                                        class="product__slider-img">
-                                </div>
-
-                                <div class="product__slider-item">
-                                    <img src="{% static 'loft/assets/images/product/product-main.png' %}" alt="banner"
-                                        class="product__slider-img">
-                                </div>
-
-                                <div class="product__slider-item">
-                                    <img src="{% static 'loft/assets/images/product/product-main.png' %}" alt="banner"
-                                        class="product__slider-img">
-                                </div>
-
+                        <div class="sliderLines">
+                            <div class="product__slider-item active">
+                                <img src="{% static 'loft/assets/images/product/product-main.png' %}" alt="banner"
+                                     class="product__slider-img">
                             </div>
 
-                            <div class="product__slider-panel">
-
-                                <ul class="product__slider-indicators">
-                                    <li>
-                                        <a href="#!" class="indicators__links active">
-                                            <img src="{% static 'loft/assets/images/product/2.png' %}" alt="products">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#!" class="indicators__links">
-                                            <img src="{% static 'loft/assets/images/product/1.png' %}" alt="products">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#!" class="indicators__links">
-                                            <img src="{% static 'loft/assets/images/product/3.png' %}" alt="products">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#!" class="indicators__links">
-                                            <img src="{% static 'loft/assets/images/product/4.png' %}" alt="products">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#!" class="indicators__links">
-                                            <img src="{% static 'loft/assets/images/product/5.png' %}" alt="products">
-                                        </a>
-                                    </li>
-                                </ul>
-
-                                <div class="product__slider-btns">
-                                    <button class="btn__next">
-                                        <img src="{% static 'loft/assets/icons/arrow-black.svg' %}" alt="arrow">
-                                    </button>
-                                    <button class="btn__prev">
-                                        <img src="{% static 'loft/assets/icons/arrow-black.svg' %}" alt="arrow">
-                                    </button>
-                                </div>
+                            <div class="product__slider-item">
+                                <img src="{% static 'loft/assets/images/product/product-main.png' %}" alt="banner"
+                                     class="product__slider-img">
                             </div>
 
+                            <div class="product__slider-item">
+                                <img src="{% static 'loft/assets/images/product/product-main.png' %}" alt="banner"
+                                     class="product__slider-img">
+                            </div>
+
+                            <div class="product__slider-item">
+                                <img src="{% static 'loft/assets/images/product/product-main.png' %}" alt="banner"
+                                     class="product__slider-img">
+                            </div>
+
+                            <div class="product__slider-item">
+                                <img src="{% static 'loft/assets/images/product/product-main.png' %}" alt="banner"
+                                     class="product__slider-img">
+                            </div>
 
                         </div>
 
-                        <div class="product__slider-parameters">
+                        <div class="product__slider-panel">
 
-                            <h1 class="product__title">Динс Velvet Yellow</h1>
-                            <span class="product__categories">Диваны</span>
-                            <div class="product__links">
-                                <h2 class="product__links-price"> <span>4 690</span> ₽</h2>
-                                <a href="#!" class="product__links-buy">Купить</a>
-                                <a href="#!" class="products__item-heart product__links-add">
-                                    <span>Добавить в желаемое</span></a>
+                            <ul class="product__slider-indicators">
+                                <li>
+                                    <a href="#!" class="indicators__links active">
+                                        <img src="{% static 'loft/assets/images/product/2.png' %}" alt="products">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="indicators__links">
+                                        <img src="{% static 'loft/assets/images/product/1.png' %}" alt="products">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="indicators__links">
+                                        <img src="{% static 'loft/assets/images/product/3.png' %}" alt="products">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="indicators__links">
+                                        <img src="{% static 'loft/assets/images/product/4.png' %}" alt="products">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="indicators__links">
+                                        <img src="{% static 'loft/assets/images/product/5.png' %}" alt="products">
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="product__slider-btns">
+                                <button class="btn__next">
+                                    <img src="{% static 'loft/assets/icons/arrow-black.svg' %}" alt="arrow">
+                                </button>
+                                <button class="btn__prev">
+                                    <img src="{% static 'loft/assets/icons/arrow-black.svg' %}" alt="arrow">
+                                </button>
                             </div>
-
-
-                            <p class="product__descr">
-                                <span class="product__descr-title">Описание</span>
-                                Лаконичные линии и простые формы, безупречный стиль и индивидуальность – все это диван
-                                «Динс». Сдержанный скандинавский дизайн украсит любую современную обстановку.
-                                Элегантность, комфорт и функциональность, собранные воедино – «Динс» просто создан для
-                                размеренного отдыха в кругу семьи или компании друзей!
-                            </p>
                         </div>
+
+
                     </div>
-                    <!-- /.product__slider -->
+
+                    <div class="product__slider-parameters">
+
+                        <h1 class="product__title">Динс Velvet Yellow</h1>
+                        <span class="product__categories">Диваны</span>
+                        <div class="product__links">
+                            <h2 class="product__links-price"><span>4 690</span> ₽</h2>
+                            <a href="#!" class="product__links-buy">Купить</a>
+                            <a href="#!" class="products__item-heart product__links-add">
+                                <span>Добавить в желаемое</span></a>
+                        </div>
+                        <ul class="paremeters__list">
+                            <li class="paremetes__list-item">
+                                    <h3 class="paremeters__list-title">Цвет</h3>
+                                    <span class="paremeters__list-btn">
+                                        <div class="paremeters__color"></div>
+                                        <div class="paremeters__color"></div>
+                                        <div class="paremeters__color"></div>
+                                        <div class="paremeters__color"></div>
+                                    </span>
+                                    <div class="list__drop"></div>
+                                </li>
+                            <li class="paremetes__list-item">
+                                <h3 class="paremeters__list-title">Размер (Д × Ш × В)</h3>
+                                <span class="paremeters__list-btn">
+                                    <div class="paremeters__size">218 СМ × 95 СМ × 90 СМ</div>
+                                </span>
+                                <div class="list__drop"></div>
+                            </li>
+                        </ul>
 
 
+                        <p class="product__descr">
+                            <span class="product__descr-title">Описание</span>
+                            Лаконичные линии и простые формы, безупречный стиль и индивидуальность – все это диван
+                            «Динс». Сдержанный скандинавский дизайн украсит любую современную обстановку.
+                            Элегантность, комфорт и функциональность, собранные воедино – «Динс» просто создан для
+                            размеренного отдыха в кругу семьи или компании друзей!
+                        </p>
+                    </div>
                 </div>
-                <!-- /.header__content -->
+                <!-- /.product__slider -->
+
+
             </div>
-            <!-- /.container -->
-        </header>
-        <!-- /.header -->
+            <!-- /.header__content -->
+        </div>
+        <!-- /.container -->
+    </header>
+    <!-- /.header -->
 
 
-        <main class="main">
-            <div class="container">
-                {% include 'loft/components/_products.html' %}
-                <!-- /.products -->
-            </div>
-            <!-- /.container -->
-        </main>
-        <!-- /.main -->
+    <main class="main">
+        <div class="container">
+            {% include 'loft/components/_products.html' %}
+            <!-- /.products -->
+        </div>
+        <!-- /.container -->
+    </main>
+    <!-- /.main -->
 
-        {% include 'loft/components/_footer.html' %}
-        <!-- /.footer -->
-    </div>
-    <!-- /.wrapper -->
+    {% include 'loft/components/_footer.html' %}
+    <!-- /.footer -->
+</div>
+<!-- /.wrapper -->
 
-    <script src="{% static 'loft/scripts/script.js' %}"></script>
-    <script src="{% static 'loft/scripts/slider.js' %}"></script>
+<script src="{% static 'loft/scripts/script.js' %}"></script>
+<script src="{% static 'loft/scripts/slider.js' %}"></script>
 
-    <!-- Js - скрипты -->
+<!-- Js - скрипты -->
 </body>
 
 </html>
